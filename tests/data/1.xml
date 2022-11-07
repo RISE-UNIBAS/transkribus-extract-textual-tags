@@ -5,12 +5,12 @@
 prov=University of Rostock/Institute of Mathematics/CITlab|PLANET AI GmbH/Tobias Gruening/tobias.gruening@planet-ai.de:name=de.uros.citlab.module.baseline2polygon.B2PSeamMultiOriented:v=2.6.7
 prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=0.7.6:model_id=36202:lm=none:date=12_10_2022_15:06</Creator>
         <Created>2022-02-08T11:27:17.990+01:00</Created>
-        <LastChange>2022-11-04T09:13:59.691+01:00</LastChange>
-        <TranskribusMetadata docId="914247" pageId="34921852" pageNr="2" tsid="102067475" status="IN_PROGRESS" userId="100217" imgUrl="https://files.transkribus.eu/Get?id=HOWEIOEWXJEWFJPRFHCVPNJM&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=KXHSUNVCBTFRVZWYVRGLATXU" imageId="28063220"/>
+        <LastChange>2022-11-07T16:18:40.006+01:00</LastChange>
+        <TranskribusMetadata docId="914247" pageId="34921852" pageNr="2" tsid="102316119" status="IN_PROGRESS" userId="100217" imgUrl="https://files.transkribus.eu/Get?id=HOWEIOEWXJEWFJPRFHCVPNJM&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=JVVVNPOTFCLKILYKBCJDHFDG" imageId="28063220"/>
     </Metadata>
     <Page imageFilename="1.jpg" imageWidth="2923" imageHeight="3605">
         <ReadingOrder>
-            <OrderedGroup id="ro_1667808040091" caption="Regions reading order">
+            <OrderedGroup id="ro_1667834335855" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="TextRegion_1667548208423_257"/>
                 <RegionRefIndexed index="1" regionRef="TextRegion_1667548214426_262"/>
                 <RegionRefIndexed index="2" regionRef="TextRegion_1667548214426_261"/>
@@ -137,7 +137,7 @@ Kaufhausgasse 7.</Unicode>
                     <Unicode>Sehr geehrter Herr Christ,</Unicode>
                 </TextEquiv>
             </TextLine>
-            <TextLine id="region_1665579746895_73l2" custom="readingOrder {index:1;} person {offset:6; length:13;} person {offset:20; length:15;}">
+            <TextLine id="region_1665579746895_73l2" custom="readingOrder {index:1;} person {offset:6; length:13;} person {offset:20; length:15;notice:Test; firstname:Max; lastname:Vischer;}">
                 <Coords points="1535,1229 2054,1233 2169,1271 2478,1227 2636,1252 2635,1128 2568,1168 2252,1159 2155,1118 2034,1166 1990,1142 1799,1185 1624,1148 1535,1176"/>
                 <Baseline points="1547,1217 1600,1217 1654,1217 1708,1215 1762,1215 1816,1215 1870,1214 1923,1214 1977,1212 2031,1212 2085,1211 2139,1211 2193,1211 2247,1209 2300,1209 2354,1209 2408,1208 2462,1208 2516,1208 2570,1208 2624,1208"/>
                 <TextEquiv>

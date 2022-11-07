@@ -3,16 +3,16 @@
 """
 
 from __future__ import annotations
+from dataclasses import dataclass
 from lxml import etree
+from typing import List, Optional
 
 import os.path
 import re
 
-
 DIR = os.path.dirname(__file__)
 PARENT_DIR = os.path.dirname(os.path.dirname(__file__))
 TESTS = f"{PARENT_DIR}/TESTS"
-
 
 """
 outline
@@ -36,17 +36,17 @@ def main(file_path: str) -> None:
     for element in tree.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}TextLine"):
         text_lines.append(TextLine(element=element))
 
-
     for text_line in text_lines:
         print(text_line.get_id())
         print(text_line.get_custom())
         print(text_line.get_coords_points())
         print(text_line.get_baseline_points())
         print(text_line.get_text())
-
-        text_line.extract_tags()
-
-        exit()
+        print(text_line.get_reading_order())
+        print(text_line.get_tags())
+        for tag in text_line.get_tags():
+            print(tag.get_name())
+        print("-" * 20)
 
 
 class TextLine:
@@ -70,43 +70,56 @@ class TextLine:
     def get_coords_points(self) -> str:
         """ Get 'points' attribute from 'Coords' subelement. """
 
-        for subelement in self.element.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}Coords"):
+        for subelement in self.element.findall(
+                ".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}Coords"):
             return subelement.attrib["points"]
 
     def get_baseline_points(self) -> str:
         """ Get 'points' attribute from 'Baseline' subelement. """
 
-        for subelement in self.element.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}Baseline"):
+        for subelement in self.element.findall(
+                ".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}Baseline"):
             return subelement.attrib["points"]
 
     def get_text(self) -> str:
         """ Get text from 'Unicode' sub-subelement (subelement of 'TextEquiv'). """
 
-        for subelement in self.element.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}Unicode"):
+        for subelement in self.element.findall(
+                ".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}Unicode"):
             return subelement.text
 
-    def extract_tags(self, tags: list[str] = None):
-        """ Extract tags from TextLine.
+    def get_reading_order(self) -> int:
+        """ Get reading order. """
 
-         If not tags are specified, all tags are extracted.
+        return int(re.search(pattern="\d+",
+                             string=self.get_custom().split(";}")[0] + ";}").group())
 
-         :param tags: tags to be extracted, defaults to None
-         """
-        unparsed = self.get_custom()
-        result = unparsed.split(";}")
-        """pattern = "\A[a-z].*[} ]"
-        result = re.findall(pattern=pattern,
-                            string=unparsed)"""
+    def get_tags(self) -> List[Optional[Tag]]:
+        """ Get textual tags. """
 
-        print(result)
+        return [Tag(item.strip() + "}") for item in self.get_custom().split(";}")][1:-1]
 
 
+@dataclass
+class Tag:
+    """ A representation of a Transkribus textual tag. """
 
+    raw: str
 
+    def get_name(self) -> str:
+        """ Get the tag name. """
 
+        return self.raw.split(" ")[0]
 
-    def map_tag(self):
-        """ Map tag coordinates to string"""
+    def get_values(self) -> None:
+        """ Get tag values (offset, length, continued, and other custom ones). """
+
         pass
 
-main(file_path=f"{TESTS}/data/input.xml")
+    def get_tagged_string(self) -> str:
+        """ Get the tagged string. """
+
+        pass
+
+
+main(file_path=f"{TESTS}/data/1.xml")
