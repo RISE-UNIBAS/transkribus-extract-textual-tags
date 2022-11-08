@@ -46,16 +46,16 @@ def main(file_path: str) -> None:
         print(text_line.get_tags())
         for tag in text_line.get_tags():
             print(tag.get_name())
+            print(tag.get_parameters())
+            print(tag.get_tagged_string(text=text_line.get_text()))
         print("-" * 20)
 
 
+@dataclass
 class TextLine:
     """ A representation of a Transkribus PAGE XML 'TextLine' element. """
 
-    def __init__(self,
-                 element: etree._Element
-                 ) -> None:
-        self.element = element
+    element: etree._Element
 
     def get_id(self) -> str:
         """ Get 'id' attribute. """
@@ -111,15 +111,21 @@ class Tag:
 
         return self.raw.split(" ")[0]
 
-    def get_values(self) -> None:
-        """ Get tag values (offset, length, continued, and other custom ones). """
+    def get_parameters(self) -> dict:
+        """ Get dictionary of tag's parameters (offset, length, continued, and other custom ones). """
 
-        pass
+        return {item.strip().split(":")[0]: item.strip().split(":")[1] for item in self.raw.split(self.get_name())[1].strip()[1:-1].split(";")}
 
-    def get_tagged_string(self) -> str:
-        """ Get the tagged string. """
+    def get_tagged_string(self,
+                          text: str) -> str:
+        """ Get the tagged string.
 
-        pass
+        :param text: the text"""
+
+        offset = int(self.get_parameters()["offset"])
+        length = int(self.get_parameters()["length"])
+
+        return text[offset:offset + length]
 
 
 main(file_path=f"{TESTS}/data/1.xml")
