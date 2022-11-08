@@ -31,10 +31,18 @@ def main(file_path: str) -> None:
     :param file_path:
     """
 
+    # TODO: iterate over files in dir
+
     doc = Document(file_path)
     print(doc)
-    for text_line in doc.get_text_lines():
-        print(text_line)
+
+    for text_region in doc.get_text_regions():
+        for text_line in text_region.get_text_lines():
+            for tag in text_line.get_tags():
+                print(tag)
+
+                # TODO: write to csv; but normalize parameters first (construct dict of paras from all docs, then write in second pass)
+
     exit()
     # below here works
 
@@ -70,10 +78,11 @@ class Document:
         if self.tree is None:
             self.tree = etree.parse(file_path)
 
-    def get_text_lines(self):
-        """ Get all 'TextLine' elements of the document. """
+    def get_text_regions(self):
+        """ Get all 'TextRegion' elements of the document. """
 
-        return [TextLine(element=element) for element in self.tree.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}TextLine")]
+        return [TextRegion(element=element) for element in
+                self.tree.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}TextRegion")]
 
     def extract_tags(self) -> None:
         """ bla """
@@ -104,6 +113,12 @@ class TextRegion:
         """ Get 'id' attribute. """
 
         return self.element.attrib["id"]
+
+    def get_text_lines(self):
+        """ Get all 'TextLine' elements of the document. """
+
+        return [TextLine(element=element) for element in
+                self.element.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}TextLine")]
 
 
 @dataclass
