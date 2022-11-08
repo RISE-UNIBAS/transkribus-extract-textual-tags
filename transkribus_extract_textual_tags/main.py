@@ -15,57 +15,6 @@ DIR = os.path.dirname(__file__)
 PARENT_DIR = os.path.dirname(os.path.dirname(__file__))
 TESTS = f"{PARENT_DIR}/TESTS"
 
-"""
-outline
-
-- load page xml à la transkribus from file or folder
-- indicate which tags to export, default all
-- save tags as csv json or similar
-
-"""
-
-
-def main(file_path: str) -> None:
-    """
-
-    :param file_path:
-    """
-
-    # TODO: iterate over files in dir
-
-    doc = Document(file_path)
-    print(doc)
-
-    for text_region in doc.get_text_regions():
-        for text_line in text_region.get_text_lines():
-            for tag in text_line.get_tags():
-                print(tag)
-
-                # TODO: write to csv; but normalize parameters first (construct dict of paras from all docs, then write in second pass)
-
-    exit()
-    # below here works
-
-    tree = etree.parse(file_path)
-
-    text_lines = []
-    for element in tree.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}TextLine"):
-        text_lines.append(TextLine(element=element))
-
-    for text_line in text_lines:
-        print(text_line.get_id())
-        print(text_line.get_custom())
-        print(text_line.get_coords_points())
-        print(text_line.get_baseline_points())
-        print(text_line.get_text())
-        print(text_line.get_reading_order())
-        print(text_line.get_tags())
-        for tag in text_line.get_tags():
-            print(tag.get_name())
-            print(tag.get_parameters())
-            print(tag.get_tagged_string(text=text_line.get_text()))
-        print("-" * 20)
-
 
 @dataclass
 class Document:
@@ -91,15 +40,29 @@ class Document:
         for text_region in self.get_text_regions():
             for text_line in text_region.get_text_lines():
                 for tag in text_line.get_tags():
+                    try:
+                        # continued tags come in pairs:
+                        if "continued" in tags[-1].get_parameters().keys() and tag.get_name() == tags[-1].get_name():
+                            continued_tagged_string = tags[-1].get_tagged_string(tags[-1].text_line_text) + " " + tag.get_tagged_string(text_line.get_text())
+                            tags[-1].set_continued_tagged_string(continued_tagged_string)
+                            continue  # skip second tag of such a pair
+                    except IndexError:
+                        pass
+                    tag.text_line_text = text_line.get_text()
+                    tag.text_region_id = text_region.get_id()
+                    tag.text_line_id = text_line.get_id()
+                    tag.text_line_coords_points = text_line.get_coords_points()
+                    tag.text_line_baseline_points = text_line.get_baseline_points()
                     tags.append(tag)
 
         return tags
 
+
+# TODO: subclass TextRegion and TextLine
 '''@dataclass
 class Text:
     """ bla """
     
-    # TODO: subclass TextRegion and TextLine
     element: etree._Element
 
     def get_id(self) -> str:
@@ -180,6 +143,11 @@ class Tag:
     """ A representation of a Transkribus textual tag. """
 
     raw: str
+    text_line_text: str = None
+    text_region_id: str = None
+    text_line_id: str = None
+    text_line_coords_points: str = None
+    text_line_baseline_points: str = None
     continued_tagged_string: str = None
 
     def get_name(self) -> str:
@@ -249,6 +217,9 @@ class Client:
         aggregated = Client.get_aggregated(tags)
         header = Client.get_header(aggregated)
 
+        # todo: write to csv here
+        for tag in tags:
+            print(tag)
 
     @staticmethod
     def get_aggregated(tags: List[Tag]):
@@ -278,7 +249,8 @@ class Client:
             parameters.update(parameter)
 
         main = ["tag_name",
-                "tagged_string"]
+                "tagged_string",
+                "continued_tagged_string"]
 
         meta = ["text_line_text",
                 "text_region_id",
@@ -289,8 +261,4 @@ class Client:
         return main + list(parameters.keys()) + meta
 
 
-# debug:
-
 Client.extract_from_dir(dir_path=f"{TESTS}/data/")
-exit()
-main(file_path=f"{TESTS}/data/1.xml")
