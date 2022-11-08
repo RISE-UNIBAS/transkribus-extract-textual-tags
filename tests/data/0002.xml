@@ -5,12 +5,12 @@
 prov=University of Rostock/Institute of Mathematics/CITlab|PLANET AI GmbH/Tobias Gruening/tobias.gruening@planet-ai.de:name=de.uros.citlab.module.baseline2polygon.B2PSeamMultiOriented:v=2.6.7
 prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=0.7.6:model_id=36202:lm=none:date=12_10_2022_15:06</Creator>
         <Created>2022-02-08T11:27:17.990+01:00</Created>
-        <LastChange>2022-11-07T16:18:40.006+01:00</LastChange>
-        <TranskribusMetadata docId="914247" pageId="34921852" pageNr="2" tsid="102316119" status="IN_PROGRESS" userId="100217" imgUrl="https://files.transkribus.eu/Get?id=HOWEIOEWXJEWFJPRFHCVPNJM&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=JVVVNPOTFCLKILYKBCJDHFDG" imageId="28063220"/>
+        <LastChange>2022-11-08T13:38:02.902+01:00</LastChange>
+        <TranskribusMetadata docId="914247" pageId="34921852" pageNr="2" tsid="102427057" status="DONE" userId="100217" imgUrl="https://files.transkribus.eu/Get?id=HOWEIOEWXJEWFJPRFHCVPNJM&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=SMBRPMHQMCDRACEZSRMPLQXT" imageId="28063220"/>
     </Metadata>
-    <Page imageFilename="1.jpg" imageWidth="2923" imageHeight="3605">
+    <Page imageFilename="0002.jpg" imageWidth="2923" imageHeight="3605">
         <ReadingOrder>
-            <OrderedGroup id="ro_1667834335855" caption="Regions reading order">
+            <OrderedGroup id="ro_1667911168217" caption="Regions reading order">
                 <RegionRefIndexed index="0" regionRef="TextRegion_1667548208423_257"/>
                 <RegionRefIndexed index="1" regionRef="TextRegion_1667548214426_262"/>
                 <RegionRefIndexed index="2" regionRef="TextRegion_1667548214426_261"/>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=TrHtr:version=0.0.5:model_id=44522:date=03_11_2022_14:56
+prov=University of Rostock/Institute of Mathematics/CITlab|PLANET AI GmbH/Tobias Gruening/tobias.gruening@planet-ai.de:name=de.uros.citlab.module.baseline2polygon.B2PSeamMultiOriented:v=2.6.7
+prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=0.6.3:model_id=36202:lm=none:date=08_02_2022_11:57</Creator>
+        <Created>2022-02-08T11:27:18.164+01:00</Created>
+        <LastChange>2022-11-08T13:37:51.596+01:00</LastChange>
+        <TranskribusMetadata docId="914247" pageId="34921856" pageNr="4" tsid="102427029" status="DONE" userId="100217" imgUrl="https://files.transkribus.eu/Get?id=XJGMZENRYMTPFJDKGJPCGQGN&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=ABQRSSHACNNCRMPCUVIWCZDX" imageId="28063224"/>
+    </Metadata>
+    <Page imageFilename="0004.jpg" imageWidth="2925" imageHeight="3604">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1667911168229" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="TextRegion_1667548694128_21"/>
+                <RegionRefIndexed index="1" regionRef="TextRegion_1667548713609_26"/>
+                <RegionRefIndexed index="2" regionRef="TextRegion_1667548713608_25"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion orientation="0.0" id="TextRegion_1667548694128_21" custom="readingOrder {index:0;} structure {type:letter_header;}">
+            <Coords points="749,321 2672,321 2672,513 749,513"/>
+            <TextLine id="r1l1" custom="readingOrder {index:0;}">
+                <Coords points="1549,404 1568,404 1624,379 1646,386 1663,383 1670,390 1701,390 1700,328 1669,331 1659,322 1628,317 1582,285 1547,290"/>
+                <Baseline points="1560,369 1585,369 1611,369 1637,369 1663,368 1689,366"/>
+                <TextEquiv>
+                    <Unicode>- 3 -</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l4" custom="readingOrder {index:1;} person {offset:0; length:12;}">
+                <Coords points="737,505 777,484 982,493 1017,476 1157,499 1271,476 1343,498 1343,422 1222,402 1129,420 1084,399 956,426 868,411 737,427"/>
+                <Baseline points="749,471 778,473 807,473 836,474 865,474 894,474 923,474 953,474 982,474 1011,474 1040,474 1069,474 1098,474 1127,474 1157,476 1186,476 1215,476 1244,476 1273,477 1302,478 1332,479"/>
+                <TextEquiv>
+                    <Unicode>Herrn Christ,</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l3" custom="readingOrder {index:2;} place {offset:0; length:5;}">
+                <Coords points="1797,487 1856,481 1877,496 1961,476 2108,481 2161,463 2159,429 2123,436 2090,433 2055,411 1969,412 1915,378 1889,389 1844,365 1799,364"/>
+                <Baseline points="1808,468 1834,468 1860,470 1886,470 1912,471 1938,471 1964,472 1991,473 2017,473 2043,473 2069,474 2095,474 2121,473 2148,473"/>
+                <TextEquiv>
+                    <Unicode>Basel.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l2" custom="readingOrder {index:3;}">
+                <Coords points="2216,462 2276,456 2301,478 2358,482 2420,471 2546,481 2547,414 2512,421 2474,398 2445,412 2400,406 2362,425 2346,412 2326,429 2258,394 2218,393"/>
+                <Baseline points="2229,458 2254,462 2279,464 2305,465 2330,467 2356,467 2381,467 2406,467 2432,467 2457,467 2483,467 2508,468 2534,468"/>
+                <TextEquiv>
+                    <Unicode>16.2.26</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>- 3 -&#13;
+Herrn Christ,&#13;
+Basel.&#13;
+16.2.26</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1667548713609_26" custom="readingOrder {index:1;} structure {type:letter_body;}">
+            <Coords points="749,513 2672,513 2672,1341 749,1341"/>
+            <TextLine id="r1l5" custom="readingOrder {index:0;}">
+                <Coords points="762,644 2476,652 2683,577 761,570"/>
+                <Baseline points="773,624 872,624 972,623 1072,623 1172,623 1272,621 1372,621 1472,621 1572,621 1672,620 1772,620 1872,620 1972,618 2072,618 2172,617 2272,617 2372,615 2472,614 2572,612 2672,611"/>
+                <TextEquiv>
+                    <Unicode>sprechungen zur Abklärung der Form des Zusammenarbeitens statt¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l6" custom="readingOrder {index:1;}">
+                <Coords points="752,742 795,750 816,733 866,727 907,749 985,740 986,676 950,681 887,646 860,646 827,672 803,678 753,668"/>
+                <Baseline points="764,713 790,715 816,717 842,717 869,717 895,717 921,716 947,717 974,719"/>
+                <TextEquiv>
+                    <Unicode>finden.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l7" custom="readingOrder {index:2;}">
+                <Coords points="1302,823 1601,821 1696,863 1846,820 1991,859 2164,818 2625,829 2624,765 2498,721 2268,770 1301,752"/>
+                <Baseline points="1313,809 1381,810 1449,810 1518,812 1586,812 1654,812 1723,812 1791,810 1859,810 1928,810 1996,809 2065,809 2133,807 2201,807 2270,806 2338,806 2406,806 2475,804 2543,804 2612,804"/>
+                <TextEquiv>
+                    <Unicode>Wir glauben, dass es zweckmässig wäre, wenn</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l8" custom="readingOrder {index:3;}">
+                <Coords points="755,941 2646,929 2645,868 2484,850 755,880"/>
+                <Baseline points="768,914 861,914 954,912 1047,912 1141,912 1234,912 1327,911 1421,911 1514,911 1607,909 1701,909 1794,909 1887,908 1980,908 2074,908 2167,906 2260,906 2354,906 2447,905 2540,905 2634,905"/>
+                <TextEquiv>
+                    <Unicode>solche Besprechungen vorerst nur in kleinem Kreise stattfinden</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l9" custom="readingOrder {index:4;}">
+                <Coords points="754,1055 2399,1052 2625,967 2304,922 2173,970 753,979"/>
+                <Baseline points="765,1014 857,1014 949,1014 1042,1013 1134,1013 1227,1013 1319,1011 1411,1011 1504,1011 1596,1011 1689,1011 1781,1010 1873,1010 1966,1010 2058,1008 2151,1008 2243,1008 2335,1007 2428,1005 2520,1005 2613,1004"/>
+                <TextEquiv>
+                    <Unicode>würden und erst, wenn ein alle befriedigender, kongreter Vor-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l10" custom="readingOrder {index:5;}">
+                <Coords points="753,1125 2592,1162 2572,1053 753,1056"/>
+                <Baseline points="765,1110 855,1110 946,1110 1037,1110 1127,1110 1218,1109 1309,1109 1399,1109 1490,1109 1581,1107 1672,1107 1762,1107 1853,1106 1944,1106 2034,1106 2125,1105 2216,1104 2306,1104 2397,1104 2488,1103 2579,1103"/>
+                <TextEquiv>
+                    <Unicode>schlag vorliegt, dieser Ihrem etwas zahlreichen Vorstand zur</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l11" custom="readingOrder {index:6;}">
+                <Coords points="753,1247 1109,1214 2045,1242 2087,1228 2087,1159 752,1163"/>
+                <Baseline points="764,1208 829,1209 895,1209 960,1209 1026,1208 1091,1208 1157,1208 1222,1208 1288,1208 1353,1206 1419,1206 1485,1206 1550,1206 1616,1205 1681,1205 1747,1205 1812,1205 1878,1205 1943,1205 2009,1206 2075,1206"/>
+                <TextEquiv>
+                    <Unicode>Genehmigung oder Ablehnung vorgelegt würde.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l12" custom="readingOrder {index:7;} boat {offset:16; length:15;}">
+                <Coords points="1278,1318 1864,1341 2294,1310 2427,1347 2491,1328 2491,1248 1277,1257"/>
+                <Baseline points="1289,1299 1348,1299 1408,1299 1467,1299 1527,1299 1586,1299 1646,1298 1705,1298 1765,1298 1824,1298 1884,1298 1944,1298 2003,1298 2063,1298 2122,1298 2182,1298 2241,1296 2301,1296 2360,1298 2420,1298 2480,1298"/>
+                <TextEquiv>
+                    <Unicode>Unser Boot soll "Vogel - Gryff" heissen.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>sprechungen zur Abklärung der Form des Zusammenarbeitens statt¬&#13;
+finden.&#13;
+Wir glauben, dass es zweckmässig wäre, wenn&#13;
+solche Besprechungen vorerst nur in kleinem Kreise stattfinden&#13;
+würden und erst, wenn ein alle befriedigender, kongreter Vor-&#13;
+schlag vorliegt, dieser Ihrem etwas zahlreichen Vorstand zur&#13;
+Genehmigung oder Ablehnung vorgelegt würde.&#13;
+Unser Boot soll "Vogel - Gryff" heissen.</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1667548713608_25" custom="readingOrder {index:2;} structure {type:letter_salutation;}">
+            <Coords points="749,1341 2672,1341 2672,1948 749,1948"/>
+            <TextLine id="line_1667548713636_28" custom="readingOrder {index:0;}">
+                <Coords points="765,1341 2325,1341 2451,1367 2452,1416 765,1428"/>
+                <Baseline points="777,1401 860,1401 943,1401 1026,1401 1109,1400 1192,1400 1275,1398 1358,1398 1441,1398 1524,1397 1608,1397 1691,1395 1774,1395 1857,1395 1940,1394 2023,1394 2106,1394 2189,1394 2272,1394 2355,1394 2439,1394"/>
+                <TextEquiv>
+                    <Unicode>Ihren gefl. Nachrichten sehen wir entgegen und zeichnen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l14" custom="readingOrder {index:1;}">
+                <Coords points="1660,1511 1914,1491 1999,1505 2028,1498 2028,1430 1924,1455 1902,1443 1791,1441 1736,1457 1684,1431 1660,1435"/>
+                <Baseline points="1671,1487 1697,1487 1724,1487 1750,1487 1777,1487 1803,1487 1830,1487 1856,1487 1883,1487 1909,1487 1936,1488 1962,1488 1989,1488 2016,1488"/>
+                <TextEquiv>
+                    <Unicode>hochachtend</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l15" custom="readingOrder {index:2;} organization {offset:0; length:6; continued:true;}">
+                <Coords points="1761,1550 1785,1555 1811,1543 1882,1549 1949,1544 1949,1497 1795,1500 1762,1495"/>
+                <Baseline points="1772,1536 1799,1535 1827,1535 1854,1535 1882,1536 1909,1537 1937,1536"/>
+                <TextEquiv>
+                    <Unicode>BASLER</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l16" custom="readingOrder {index:3;} organization {offset:0; length:34; continued:true;}">
+                <Coords points="1295,1618 1362,1604 1416,1649 1542,1603 1941,1620 2010,1586 2176,1633 2214,1597 2361,1596 2361,1528 1295,1547"/>
+                <Baseline points="1308,1587 1360,1586 1412,1586 1464,1586 1516,1586 1568,1586 1620,1586 1672,1586 1724,1586 1776,1586 1828,1586 1880,1586 1932,1586 1984,1584 2036,1584 2088,1584 2140,1584 2192,1583 2244,1582 2296,1581 2349,1580"/>
+                <TextEquiv>
+                    <Unicode>RHEINSCHIFFAHRT AKTIENGESELLSCHAFT</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l17" custom="readingOrder {index:4;} person {offset:0; length:9;} person {offset:10; length:9;}">
+                <Coords points="1451,1781 1562,1747 1646,1804 1737,1755 1939,1783 2011,1757 2119,1784 2258,1762 2260,1701 2124,1618 2084,1633 2007,1585 1941,1621 1826,1599 1741,1634 1628,1602 1456,1634"/>
+                <Baseline points="1466,1725 1505,1727 1544,1727 1583,1729 1622,1731 1661,1731 1700,1733 1739,1734 1778,1736 1817,1737 1856,1739 1895,1740 1934,1742 1973,1743 2012,1744 2051,1745 2090,1746 2129,1746 2168,1748 2207,1748 2246,1749"/>
+                <TextEquiv>
+                    <Unicode>Groschupf F. Ritter</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l18" custom="readingOrder {index:5;} person {offset:7; length:13;} place {offset:42; length:5;}">
+                <Coords points="760,1931 971,1894 2211,1909 2211,1799 1902,1786 1646,1856 1503,1766 1325,1855 760,1838"/>
+                <Baseline points="771,1889 842,1887 913,1887 985,1887 1056,1886 1128,1886 1199,1886 1270,1884 1342,1884 1413,1884 1485,1884 1556,1884 1627,1884 1699,1883 1770,1883 1842,1883 1913,1883 1984,1883 2056,1883 2127,1883 2199,1883"/>
+                <TextEquiv>
+                    <Unicode>Copie: Herrn Ryniker, Schiffbau-Ingenieur Basel</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r1l19" custom="readingOrder {index:6;} person {offset:6; length:12;} place {offset:20; length:5;}">
+                <Coords points="973,1958 1011,1976 1127,1952 1184,1975 1241,1946 1363,2002 1564,1951 1771,1947 1770,1909 1720,1884 972,1893"/>
+                <Baseline points="984,1934 1022,1935 1061,1937 1100,1937 1138,1937 1177,1937 1216,1937 1254,1937 1293,1937 1332,1935 1371,1935 1409,1934 1448,1934 1487,1934 1525,1932 1564,1932 1603,1932 1641,1932 1680,1932 1719,1934 1758,1934"/>
+                <TextEquiv>
+                    <Unicode>Herrn Dr. Krasting, Basel.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>Ihren gefl. Nachrichten sehen wir entgegen und zeichnen&#13;
+hochachtend&#13;
+BASLER&#13;
+RHEINSCHIFFAHRT AKTIENGESELLSCHAFT&#13;
+Groschupf F. Ritter&#13;
+Copie: Herrn Ryniker, Schiffbau-Ingenieur Basel&#13;
+Herrn Dr. Krasting, Basel.</Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

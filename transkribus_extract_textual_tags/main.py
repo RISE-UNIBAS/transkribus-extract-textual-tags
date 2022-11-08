@@ -84,11 +84,16 @@ class Document:
         return [TextRegion(element=element) for element in
                 self.tree.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}TextRegion")]
 
-    def extract_tags(self) -> None:
-        """ bla """
+    def get_tags(self) -> List[Optional[Tag]]:
+        """ Get all textual tags from the document. """
 
-        pass
+        tags = []
+        for text_region in self.get_text_regions():
+            for text_line in text_region.get_text_lines():
+                for tag in text_line.get_tags():
+                    tags.append(tag)
 
+        return tags
 
 '''@dataclass
 class Text:
@@ -175,6 +180,7 @@ class Tag:
     """ A representation of a Transkribus textual tag. """
 
     raw: str
+    continued_tagged_string: str = None
 
     def get_name(self) -> str:
         """ Get the tag name. """
@@ -197,27 +203,94 @@ class Tag:
 
         return text[offset:offset + length]
 
+    def set_continued_tagged_string(self,
+                                    continued_tagged_string: str):
+        """ Set combined tagged string.
+
+        A continued tagged string is the concatenation of two tagged strings if the tags have parameter
+        'continued' both set to 'true' and are adjacent in the PAGE XML document.
+
+        :param continued_tagged_string: the combined tagged string
+        """
+
+        self.continued_tagged_string = continued_tagged_string
+
 
 class Client:
     """ bla """
 
     @staticmethod
-    def extract(file_path: str) -> None:
-        """
+    def extract_from_file(file_path: str) -> None:
+        """ Extract tags from file with Transkribus PAGE XML documents.
 
         :param file_path:
         """
 
-        """
-        mock output:
-        tag_name, tagged_string, text_line_text, text_region_id, text_line_id, text_line_coords_points, text_line_baseline_points
-        
-        """
-
         pass
 
+    @staticmethod
+    def extract_from_dir(dir_path: str) -> None:
+        """ Extract tags from directory with Transkribus PAGE XML documents.
+
+        :param dir_path: the complete path to the directory
+        """
+
+        try:
+            os.path.exists(dir_path)
+        except FileNotFoundError:
+            raise
+
+        tags = []
+        for file in os.listdir(dir_path):
+            if not file.endswith(".xml"):
+                continue
+            tags = tags + Document(file_path=f"{dir_path}/{file}").get_tags()
+
+        aggregated = Client.get_aggregated(tags)
+        header = Client.get_header(aggregated)
 
 
+    @staticmethod
+    def get_aggregated(tags: List[Tag]):
+        """ Get aggregated parameters per tag.
+
+        :param tags: the tags
+        """
+
+        aggregated = dict()
+        for tag in tags:
+            try:
+                aggregated[tag.get_name()].update(tag.get_parameters())
+            except KeyError:
+                aggregated[tag.get_name()] = tag.get_parameters()
+
+        return aggregated
+
+    @staticmethod
+    def get_header(tag_names_parameters: dict):
+        """ Get header.
+
+        :param tag_names_parameters: aggregated tag names and parameters
+        """
+
+        parameters = {}
+        for parameter in tag_names_parameters.values():
+            parameters.update(parameter)
+
+        main = ["tag_name",
+                "tagged_string"]
+
+        meta = ["text_line_text",
+                "text_region_id",
+                "text_line_id",
+                "text_line_coords_points",
+                "text_line_baseline_points"]
+
+        return main + list(parameters.keys()) + meta
 
 
+# debug:
+
+Client.extract_from_dir(dir_path=f"{TESTS}/data/")
+exit()
 main(file_path=f"{TESTS}/data/1.xml")
