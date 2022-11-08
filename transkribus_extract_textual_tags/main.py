@@ -3,10 +3,11 @@
 """
 
 from __future__ import annotations
-from dataclasses import dataclass
+from dataclasses import dataclass, InitVar
 from lxml import etree
 from typing import List, Optional
 
+import csv
 import os.path
 import re
 
@@ -30,6 +31,13 @@ def main(file_path: str) -> None:
     :param file_path:
     """
 
+    doc = Document(file_path)
+    print(doc)
+    for text_line in doc.get_text_lines():
+        print(text_line)
+    exit()
+    # below here works
+
     tree = etree.parse(file_path)
 
     text_lines = []
@@ -49,6 +57,53 @@ def main(file_path: str) -> None:
             print(tag.get_parameters())
             print(tag.get_tagged_string(text=text_line.get_text()))
         print("-" * 20)
+
+
+@dataclass
+class Document:
+    """ A representation of a Transkribus PAGE XML document. """
+
+    file_path: InitVar[str]
+    tree: etree._Element = None
+
+    def __post_init__(self, file_path):
+        if self.tree is None:
+            self.tree = etree.parse(file_path)
+
+    def get_text_lines(self):
+        """ Get all 'TextLine' elements of the document. """
+
+        return [TextLine(element=element) for element in self.tree.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}TextLine")]
+
+    def extract_tags(self) -> None:
+        """ bla """
+
+        pass
+
+
+'''@dataclass
+class Text:
+    """ bla """
+    
+    # TODO: subclass TextRegion and TextLine
+    element: etree._Element
+
+    def get_id(self) -> str:
+        """ Get 'id' attribute. """
+
+        return self.element.attrib["id"]'''
+
+
+@dataclass
+class TextRegion:
+    """ A representation of a Transkribus PAGE XML 'TextRegion' element. """
+
+    element: etree._Element
+
+    def get_id(self) -> str:
+        """ Get 'id' attribute. """
+
+        return self.element.attrib["id"]
 
 
 @dataclass
@@ -126,6 +181,28 @@ class Tag:
         length = int(self.get_parameters()["length"])
 
         return text[offset:offset + length]
+
+
+class Client:
+    """ bla """
+
+    @staticmethod
+    def extract(file_path: str) -> None:
+        """
+
+        :param file_path:
+        """
+
+        """
+        mock output:
+        tag_name, tagged_string, text_line_text, text_region_id, text_line_id, text_line_coords_points, text_line_baseline_points
+        
+        """
+
+        pass
+
+
+
 
 
 main(file_path=f"{TESTS}/data/1.xml")
