@@ -17,6 +17,8 @@ class Client:
         :param file_path:
         """
 
+        tags = Document(file_path=file_path).get_tags()
+
         pass
 
     @staticmethod
@@ -41,7 +43,3 @@ class Client:
 
         Utility.write_csv(save_file_path=save_file_path,
                           tags=tags)
-
-
-
-

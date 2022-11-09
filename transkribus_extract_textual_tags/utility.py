@@ -19,9 +19,9 @@ class Utility:
         aggregated = dict()
         for tag in tags:
             try:
-                aggregated[tag.get_name()].update(tag.get_parameters())
+                aggregated[tag.tag_name].update(tag.get_parameters())
             except KeyError:
-                aggregated[tag.get_name()] = tag.get_parameters()
+                aggregated[tag.tag_name] = tag.get_parameters()
 
         return aggregated
 
@@ -36,21 +36,21 @@ class Utility:
         for parameter in tag_names_parameters.values():
             parameters.update(parameter)
 
-        header = ["tag_name",
-                  "tagged_string",
-                  "continued_tagged_string",
-                  "text_region_id",
-                  "text_line_text",
-                  "text_line_id",
-                  "text_line_coords_points",
-                  "text_line_baseline_points"]
+        attributes = ["tag_name",
+                      "tagged_string",
+                      "continued_tagged_string",
+                      "text_region_id",
+                      "text_line_id",
+                      "text_line_text",
+                      "text_line_coords_points",
+                      "text_line_baseline_points"]
 
-        return header + list(parameters.keys())
+        return attributes + list(parameters.keys())
 
     @staticmethod
     def write_csv(save_file_path: str,
                   tags: list[Tag]) -> None:
-        """ bla
+        """ Write tags to CSV file.
 
         :param save_file_path: the complete path to the save file (need not exist yet)
         :param tags: tags to be written
@@ -61,6 +61,5 @@ class Utility:
         with open(save_file_path, "w", newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
             writer.writerow(header)
-
             for tag in tags:
-                print(tag.get_csv_serialization(header=header))
+                writer.writerow(tag.get_csv_row(header=header))

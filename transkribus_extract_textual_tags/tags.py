@@ -37,16 +37,17 @@ class Document:
                 for tag in text_line.get_tags():
                     try:
                         # continued tags come in pairs:
-                        if "continued" in tags[-1].get_parameters().keys() and tag.get_name() == tags[-1].get_name():
+                        if "continued" in tags[-1].get_parameters().keys() and tag.tag_name == tags[-1].tag_name:
                             continued_tagged_string = tags[-1].get_tagged_string(
                                 tags[-1].text_line_text) + " " + tag.get_tagged_string(text_line.get_text())
                             tags[-1].set_continued_tagged_string(continued_tagged_string)
                             continue  # skip second tag of such a pair
                     except IndexError:
                         pass
-                    tag.text_line_text = text_line.get_text()
+                    tag.tagged_string = tag.get_tagged_string(text_line.get_text())
                     tag.text_region_id = text_region.get_id()
                     tag.text_line_id = text_line.get_id()
+                    tag.text_line_text = text_line.get_text()
                     tag.text_line_coords_points = text_line.get_coords_points()
                     tag.text_line_baseline_points = text_line.get_baseline_points()
                     tags.append(tag)
@@ -139,23 +140,24 @@ class Tag:
     """ A representation of a Transkribus textual tag. """
 
     raw: str
-    text_line_text: str = None
+    tag_name: str = None
+    tagged_string = None
+    continued_tagged_string: str = None
     text_region_id: str = None
     text_line_id: str = None
+    text_line_text: str = None
     text_line_coords_points: str = None
     text_line_baseline_points: str = None
-    continued_tagged_string: str = None
 
-    def get_name(self) -> str:
-        """ Get the tag name. """
-
-        return self.raw.split(" ")[0]
+    def __post_init__(self):
+        if self.tag_name is None:
+            self.tag_name = self.raw.split(" ")[0]
 
     def get_parameters(self) -> dict:
         """ Get dictionary of tag's parameters (offset, length, continued, and other custom ones). """
 
         return {item.strip().split(":")[0]: item.strip().split(":")[1] for item in
-                self.raw.split(self.get_name())[1].strip()[1:-1].split(";")}
+                self.raw.split(self.tag_name)[1].strip()[1:-1].split(";")}
 
     def get_tagged_string(self,
                           text: str) -> str:
@@ -168,14 +170,27 @@ class Tag:
 
         return text[offset:offset + length]
 
-    def get_csv_serialization(self,
-                              header: list[str]) -> None:
-        """ bla
+    def get_csv_row(self,
+                    header: list[str]) -> list[str]:
+        """ Get tag as CSV row serialization.
 
-        :param header:
+        :param header: the CSV header
         """
 
-        pass
+        row = []
+        for attribute in header[:8]:
+            try:
+                row.append(self.__getattribute__(attribute))
+            except AttributeError:
+                raise
+
+        for parameter in header[8:]:
+            try:
+                row.append(self.get_parameters()[parameter])
+            except KeyError:
+                row.append(None)
+
+        return row
 
     def set_continued_tagged_string(self,
                                     continued_tagged_string: str):
