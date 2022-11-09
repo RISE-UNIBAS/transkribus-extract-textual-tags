@@ -3,12 +3,18 @@
 Main app. """
 
 from transkribus_extract_textual_tags.client import Client
-
 import os.path
 
-DIR = os.path.dirname(__file__)
 PARENT_DIR = os.path.dirname(os.path.dirname(__file__))
-TESTS = f"{PARENT_DIR}/TESTS"
+SAMPLE = f"{PARENT_DIR}/sample"
 
-Client.extract_from_dir(dir_path=f"{TESTS}/data/",
-                        save_file_path="test.csv")
+
+def main():
+    """ Run the app on the sample data. """
+
+    Client.extract_from_dir(dir_path=f"{SAMPLE}",
+                            save_file_path=f"{SAMPLE}/sample.csv")
+
+
+if __name__ == "__main__":
+    main()

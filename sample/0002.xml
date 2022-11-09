@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=READ-COOP:name=TrHtr:version=0.0.5:model_id=44522:date=03_11_2022_14:56
+prov=University of Rostock/Institute of Mathematics/CITlab|PLANET AI GmbH/Tobias Gruening/tobias.gruening@planet-ai.de:name=de.uros.citlab.module.baseline2polygon.B2PSeamMultiOriented:v=2.6.7
+prov=READ-COOP:name=PyLaia@TranskribusPlatform:version=0.7.6:model_id=36202:lm=none:date=12_10_2022_15:06</Creator>
+        <Created>2022-02-08T11:27:17.990+01:00</Created>
+        <LastChange>2022-11-08T13:38:02.902+01:00</LastChange>
+        <TranskribusMetadata docId="914247" pageId="34921852" pageNr="2" tsid="102427057" status="DONE" userId="100217" imgUrl="https://files.transkribus.eu/Get?id=HOWEIOEWXJEWFJPRFHCVPNJM&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=SMBRPMHQMCDRACEZSRMPLQXT" imageId="28063220"/>
+    </Metadata>
+    <Page imageFilename="0002.jpg" imageWidth="2923" imageHeight="3605">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1667911168217" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="TextRegion_1667548208423_257"/>
+                <RegionRefIndexed index="1" regionRef="TextRegion_1667548214426_262"/>
+                <RegionRefIndexed index="2" regionRef="TextRegion_1667548214426_261"/>
+                <RegionRefIndexed index="3" regionRef="TextRegion_1667548203523_250"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion orientation="0.0" id="TextRegion_1667548208423_257" custom="readingOrder {index:0;} structure {type:letter_sender;}">
+            <Coords points="260,245 1348,245 1348,1055 260,1055"/>
+            <TextLine id="region_1665579736232_64l1" custom="readingOrder {index:0;} organization {offset:0; length:6; continued:true;}">
+                <Coords points="680,348 697,348 706,358 803,352 815,358 825,350 854,361 915,362 916,296 877,301 829,263 819,270 807,265 790,282 771,274 759,284 747,271 681,282"/>
+                <Baseline points="692,339 718,339 744,339 771,339 797,341 823,342 850,342 876,342 903,341"/>
+                <TextEquiv>
+                    <Unicode>Basler</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579736232_64l2" custom="readingOrder {index:1;} organization {offset:0; length:34; continued:true;}">
+                <Coords points="287,446 1308,444 1308,364 1198,352 963,392 827,351 760,377 662,324 500,392 430,358 287,363"/>
+                <Baseline points="299,425 348,426 398,426 448,426 498,426 548,426 597,426 647,426 697,426 747,426 797,425 846,425 896,425 946,425 996,425 1046,425 1095,425 1145,425 1195,425 1245,425 1295,425"/>
+                <TextEquiv>
+                    <Unicode>Rheinschiffahrt-Aktiengesellschaft</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579736232_64l3" custom="readingOrder {index:2;} place {offset:0; length:16;}">
+                <Coords points="647,509 735,507 747,519 844,519 866,508 960,514 959,451 884,450 870,465 719,444 697,454 646,451"/>
+                <Baseline points="660,494 686,494 712,494 738,492 764,492 790,492 817,492 843,492 869,491 895,489 921,488 948,486"/>
+                <TextEquiv>
+                    <Unicode>Marktgasse 5 III</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579736232_64l4" custom="readingOrder {index:3;}">
+                <Coords points="583,603 1019,604 1019,524 801,560 583,535"/>
+                <Baseline points="594,582 619,582 645,584 671,584 697,585 723,585 749,585 775,585 801,585 826,585 852,585 878,585 904,585 930,585 956,584 982,584 1008,584"/>
+                <TextEquiv>
+                    <Unicode>Telephon: Birsig 69.90-92</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579736232_64l5" custom="readingOrder {index:4;}">
+                <Coords points="600,649 1017,648 1017,594 864,594 838,579 745,611 600,598"/>
+                <Baseline points="612,635 638,635 664,635 690,635 716,635 743,633 769,633 795,633 821,633 847,633 874,633 900,635 926,635 952,635 978,636 1005,638"/>
+                <TextEquiv>
+                    <Unicode>Telegramme: Navibale</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579736232_64l6" custom="readingOrder {index:5;}">
+                <Coords points="593,695 746,707 862,687 884,702 925,692 1010,706 1010,641 974,656 903,641 593,649"/>
+                <Baseline points="606,681 632,681 658,681 684,681 710,681 737,681 763,681 789,681 815,680 841,680 868,680 894,680 920,680 946,681 972,681 999,681"/>
+                <TextEquiv>
+                    <Unicode>Postcheck-Konto V 3012</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579736232_64l7" custom="readingOrder {index:6;} place {offset:16; length:33;}">
+                <Coords points="395,757 1188,759 1188,706 1111,698 599,713 492,689 395,708"/>
+                <Baseline points="408,741 446,741 484,741 523,741 561,741 600,741 638,741 676,741 715,741 753,741 792,741 830,741 868,741 907,741 945,741 984,741 1022,741 1060,741 1099,741 1137,741 1176,741"/>
+                <TextEquiv>
+                    <Unicode>Bankverbindung: Schweizerischer Bankverein, Basel</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>Basler&#13;
+Rheinschiffahrt-Aktiengesellschaft&#13;
+Marktgasse 5 III&#13;
+Telephon: Birsig 69.90-92&#13;
+Telegramme: Navibale&#13;
+Postcheck-Konto V 3012&#13;
+Bankverbindung: Schweizerischer Bankverein, Basel</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1667548214426_262" custom="readingOrder {index:1;} structure {type:letter_date_location;}">
+            <Coords points="1348,245 2449,245 2449,504 1348,504"/>
+            <TextLine id="region_1665579740459_67l1" custom="readingOrder {index:0;} place {offset:0; length:5;}">
+                <Coords points="1517,434 1805,431 2007,469 2087,441 2387,434 2414,426 2414,375 2292,340 2246,377 2176,375 2006,335 1822,390 1516,373"/>
+                <Baseline points="1530,422 1573,423 1617,424 1660,425 1704,425 1748,425 1791,425 1835,425 1879,423 1922,423 1966,422 2010,422 2053,420 2097,420 2141,419 2184,419 2228,419 2272,419 2315,419 2359,419 2403,420"/>
+                <TextEquiv>
+                    <Unicode>Basel, den 16. Februar 1926.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>Basel, den 16. Februar 1926.</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1667548214426_261" custom="readingOrder {index:2;} structure {type:letter_receiver;}">
+            <Coords points="1348,504 2720,504 2720,1055 1348,1055"/>
+            <TextLine id="region_1665579743513_70l1" custom="readingOrder {index:0;} person {offset:0; length:12;}">
+                <Coords points="1367,781 1501,796 1583,769 1656,794 1734,780 1777,804 1828,770 1923,800 1988,790 1988,725 1913,720 1862,688 1588,731 1491,699 1368,740"/>
+                <Baseline points="1380,770 1409,770 1439,771 1469,771 1499,771 1529,771 1559,771 1588,771 1618,770 1648,770 1678,770 1708,770 1738,770 1768,770 1797,770 1827,770 1857,771 1887,771 1917,773 1947,774 1977,776"/>
+                <TextEquiv>
+                    <Unicode>Herrn Christ,</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579743513_70l2" custom="readingOrder {index:1;} organization {offset:6; length:24;}">
+                <Coords points="1440,899 2291,878 2408,935 2407,800 2368,790 2213,828 1994,788 1869,825 1439,826"/>
+                <Baseline points="1452,872 1499,872 1546,872 1593,872 1640,872 1687,872 1734,870 1781,870 1828,869 1875,869 1923,867 1970,867 2017,867 2064,866 2111,866 2158,866 2205,866 2252,866 2299,867 2346,868 2394,869"/>
+                <TextEquiv>
+                    <Unicode>i/Fa. Paravicini, Christ &amp; Co.,</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579743513_70l3" custom="readingOrder {index:2;} place {offset:0; length:6; continued:true;}">
+                <Coords points="2083,968 2207,961 2217,969 2321,962 2379,970 2398,965 2399,924 2367,923 2353,909 2326,926 2277,928 2214,908 2146,918 2083,908"/>
+                <Baseline points="2096,957 2122,960 2148,960 2175,962 2201,962 2228,963 2254,963 2281,962 2307,962 2334,962 2360,960 2387,960"/>
+                <TextEquiv>
+                    <Unicode>Basel.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1667548203559_254" custom="readingOrder {index:3;} place {offset:0; length:16; continued:true;}">
+                <Coords points="2010,962 2372,970 2413,945 2524,942 2525,1019 2481,1034 2190,1031 2135,1055 2010,1055"/>
+                <Baseline points="2022,1010 2047,1011 2073,1011 2099,1011 2125,1011 2151,1011 2177,1011 2202,1010 2228,1010 2254,1008 2280,1008 2306,1008 2332,1007 2357,1007 2383,1007 2409,1007 2435,1008 2461,1008 2487,1010 2513,1011"/>
+                <TextEquiv>
+                    <Unicode>Kaufhausgasse 7.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>Herrn Christ,&#13;
+i/Fa. Paravicini, Christ &amp; Co.,&#13;
+Basel.&#13;
+Kaufhausgasse 7.</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1667548203523_250" custom="readingOrder {index:3;} structure {type:letter_body;}">
+            <Coords points="260,1055 2720,1055 2720,3369 260,3369"/>
+            <TextLine id="region_1665579746895_73l1" custom="readingOrder {index:0;} person {offset:14; length:11;}">
+                <Coords points="742,1169 965,1172 1055,1135 1516,1152 1569,1135 1569,1059 1280,1088 1069,1058 999,1085 940,1059 742,1074"/>
+                <Baseline points="755,1121 795,1122 835,1124 875,1124 915,1124 955,1124 995,1124 1035,1124 1075,1122 1115,1122 1156,1121 1196,1121 1236,1121 1276,1119 1316,1119 1356,1119 1396,1119 1436,1119 1476,1119 1516,1121 1557,1122"/>
+                <TextEquiv>
+                    <Unicode>Sehr geehrter Herr Christ,</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l2" custom="readingOrder {index:1;} person {offset:6; length:13;} person {offset:20; length:15;notice:Test; firstname:Max; lastname:Vischer;}">
+                <Coords points="1535,1229 2054,1233 2169,1271 2478,1227 2636,1252 2635,1128 2568,1168 2252,1159 2155,1118 2034,1166 1990,1142 1799,1185 1624,1148 1535,1176"/>
+                <Baseline points="1547,1217 1600,1217 1654,1217 1708,1215 1762,1215 1816,1215 1870,1214 1923,1214 1977,1212 2031,1212 2085,1211 2139,1211 2193,1211 2247,1209 2300,1209 2354,1209 2408,1208 2462,1208 2516,1208 2570,1208 2624,1208"/>
+                <TextEquiv>
+                    <Unicode>Durch Herrn Ryniker/Dr. Max Vischer</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l3" custom="readingOrder {index:2;}">
+                <Coords points="743,1352 2572,1347 2535,1246 743,1274"/>
+                <Baseline points="756,1320 846,1320 936,1319 1026,1319 1116,1319 1206,1317 1296,1317 1387,1317 1477,1316 1567,1316 1657,1314 1747,1314 1837,1313 1927,1313 2018,1311 2108,1311 2198,1310 2288,1308 2378,1308 2468,1307 2559,1305"/>
+                <TextEquiv>
+                    <Unicode>haben Sie wahrscheinlich erfahren, dass unsere Gesellschaft</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l4" custom="readingOrder {index:3;}">
+                <Coords points="754,1432 2481,1442 2565,1419 2565,1352 753,1371"/>
+                <Baseline points="767,1421 856,1421 945,1419 1034,1419 1124,1418 1213,1418 1302,1416 1392,1416 1481,1416 1570,1415 1660,1415 1749,1413 1838,1413 1927,1412 2017,1412 2106,1410 2195,1410 2285,1409 2374,1407 2463,1407 2553,1406"/>
+                <TextEquiv>
+                    <Unicode>ein Dieselmotorboot bestellt hat. Das Boot wird ähnlich ge-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l5" custom="readingOrder {index:4;} boat {offset:27; length:13;}">
+                <Coords points="757,1539 2576,1561 2575,1464 2291,1437 756,1476"/>
+                <Baseline points="768,1520 857,1520 947,1520 1037,1520 1127,1520 1217,1518 1306,1518 1396,1517 1486,1517 1576,1515 1666,1515 1755,1514 1845,1514 1935,1512 2025,1511 2115,1511 2204,1509 2294,1509 2384,1509 2474,1509 2564,1508"/>
+                <TextEquiv>
+                    <Unicode>baut wie Ihr Passagierboot "Rheinfelden". Es ist allerdings</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l6" custom="readingOrder {index:5;}">
+                <Coords points="760,1643 2242,1650 2586,1635 2586,1567 760,1575"/>
+                <Baseline points="773,1616 863,1616 953,1616 1043,1616 1133,1616 1223,1614 1313,1614 1403,1613 1493,1613 1583,1611 1673,1610 1763,1610 1853,1608 1943,1608 2033,1607 2123,1606 2213,1605 2303,1605 2393,1604 2483,1604 2573,1605"/>
+                <TextEquiv>
+                    <Unicode>ca. 6 m kürzer und ca. 1/2 m. schmäler. Es soll dazu dienen,</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l7" custom="readingOrder {index:6;} place {offset:19; length:5;} place {offset:37; length:14;}">
+                <Coords points="755,1748 2695,1717 2573,1633 754,1665"/>
+                <Baseline points="767,1718 862,1718 958,1716 1054,1715 1150,1715 1245,1713 1341,1713 1437,1712 1533,1712 1628,1710 1724,1710 1820,1709 1916,1709 2011,1709 2107,1707 2203,1707 2299,1706 2394,1706 2490,1706 2586,1704 2682,1704"/>
+                <TextEquiv>
+                    <Unicode>im Hafengebiet von Basel die auf dem Hüninger Kanal eintreffen-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l8" custom="readingOrder {index:7;}">
+                <Coords points="760,1829 2501,1851 2525,1775 759,1761"/>
+                <Baseline points="773,1817 860,1817 947,1815 1034,1815 1121,1814 1208,1814 1295,1813 1382,1812 1469,1812 1556,1811 1643,1811 1730,1809 1817,1809 1904,1809 1991,1808 2078,1808 2165,1808 2252,1808 2339,1808 2426,1808 2514,1808"/>
+                <TextEquiv>
+                    <Unicode>den Kanalschiffe zu ihrer Löschstelle zu verschleppen. Da</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l9" custom="readingOrder {index:8;}">
+                <Coords points="753,1947 2538,1932 2688,1924 2688,1849 753,1862"/>
+                <Baseline points="765,1917 860,1916 956,1916 1051,1914 1147,1914 1242,1913 1338,1913 1433,1913 1529,1911 1624,1911 1720,1910 1816,1910 1911,1910 2007,1908 2102,1908 2198,1907 2293,1907 2389,1905 2484,1905 2580,1904 2676,1902"/>
+                <TextEquiv>
+                    <Unicode>diese Arbeit allein aber nicht ermöglicht, ein Boot wirtschaft-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l10" custom="readingOrder {index:9;}">
+                <Coords points="766,2038 2563,2037 2579,1916 2412,1975 765,1958"/>
+                <Baseline points="777,2016 866,2015 956,2015 1045,2013 1135,2013 1224,2013 1314,2012 1403,2012 1493,2012 1582,2010 1672,2010 1762,2010 1851,2010 1941,2009 2030,2009 2120,2009 2209,2007 2299,2007 2388,2006 2478,2006 2568,2004"/>
+                <TextEquiv>
+                    <Unicode>lich zu betreiben, haben wir das Boot so bauen lassen, dass</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l11" custom="readingOrder {index:10;}">
+                <Coords points="756,2128 2327,2139 2361,2056 755,2050"/>
+                <Baseline points="768,2109 847,2109 926,2109 1005,2108 1084,2108 1163,2108 1242,2107 1321,2106 1400,2106 1479,2105 1558,2105 1637,2105 1716,2103 1795,2103 1874,2103 1953,2103 2032,2102 2111,2102 2190,2102 2269,2102 2349,2103"/>
+                <TextEquiv>
+                    <Unicode>es gleichzeitig der Personenbeförderung dienen kann.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l12" custom="readingOrder {index:11;}">
+                <Coords points="1296,2245 1356,2213 2562,2233 2610,2216 2610,2158 2020,2134 1817,2172 1540,2132 1295,2170"/>
+                <Baseline points="1308,2202 1372,2204 1437,2204 1501,2204 1566,2204 1630,2204 1695,2204 1759,2204 1824,2204 1888,2202 1953,2202 2017,2202 2082,2201 2146,2201 2211,2200 2275,2199 2340,2199 2404,2198 2469,2198 2533,2198 2598,2198"/>
+                <TextEquiv>
+                    <Unicode>Der Kanalverkehr, der dem Boot im Schlepp-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l13" custom="readingOrder {index:12;}">
+                <Coords points="774,2343 2641,2311 2558,2239 773,2267"/>
+                <Baseline points="785,2310 877,2309 969,2307 1061,2307 1153,2306 1245,2306 1337,2304 1430,2304 1522,2304 1614,2303 1706,2303 1798,2303 1890,2301 1982,2301 2075,2301 2167,2300 2259,2300 2351,2300 2443,2298 2535,2297 2628,2297"/>
+                <TextEquiv>
+                    <Unicode>geschäft Beschäfftigung bringt, beginnt in der Regel im Herbst</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l14" custom="readingOrder {index:13;}">
+                <Coords points="767,2439 2637,2433 2636,2353 2447,2337 766,2344"/>
+                <Baseline points="780,2408 872,2406 964,2406 1056,2405 1149,2403 1241,2403 1333,2403 1425,2402 1518,2402 1610,2402 1702,2401 1794,2400 1887,2400 1979,2400 2071,2399 2163,2399 2256,2397 2348,2396 2440,2394 2532,2393 2625,2391"/>
+                <TextEquiv>
+                    <Unicode>und dauert bis zum Frühjahr. Er ist eine Ergänzung zum Rhein-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l15" custom="readingOrder {index:14;}">
+                <Coords points="753,2542 2695,2530 2695,2467 752,2457"/>
+                <Baseline points="765,2504 860,2504 956,2504 1052,2504 1148,2504 1244,2502 1340,2502 1435,2501 1531,2501 1627,2499 1723,2499 1819,2498 1915,2498 2011,2496 2106,2496 2202,2496 2298,2495 2394,2495 2490,2495 2586,2495 2682,2496"/>
+                <TextEquiv>
+                    <Unicode>verkehr. Im Sommer ist das Boot zur Hauptsache für die Personen-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l16" custom="readingOrder {index:15;} person {offset:53; length:5; continued:true;}">
+                <Coords points="773,2631 2555,2632 2555,2555 2460,2538 773,2549"/>
+                <Baseline points="786,2603 873,2603 961,2603 1049,2603 1137,2603 1225,2601 1313,2601 1401,2601 1489,2600 1577,2600 1665,2598 1752,2598 1840,2597 1928,2597 2016,2597 2104,2595 2192,2595 2280,2595 2368,2594 2456,2594 2544,2594"/>
+                <TextEquiv>
+                    <Unicode>beförderung verfügbar. Die Pläne des Bootes sind von Herrn</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l17" custom="readingOrder {index:16;} person {offset:0; length:27; continued:true;}">
+                <Coords points="756,2736 2628,2715 2627,2645 2535,2631 755,2644"/>
+                <Baseline points="768,2700 860,2702 952,2702 1045,2702 1137,2700 1229,2700 1322,2700 1414,2699 1506,2699 1599,2699 1691,2697 1783,2697 1876,2696 1968,2696 2060,2694 2153,2694 2245,2694 2337,2693 2430,2693 2522,2693 2615,2693"/>
+                <TextEquiv>
+                    <Unicode>Schiffbau-Ingenieur Ryniker entworfen. Das Boot fasst bequem</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l18" custom="readingOrder {index:17;}">
+                <Coords points="768,2824 2451,2835 2730,2819 2730,2739 768,2751"/>
+                <Baseline points="779,2801 881,2801 983,2799 1085,2799 1187,2798 1289,2796 1391,2796 1493,2795 1595,2795 1697,2793 1799,2793 1901,2792 2003,2792 2105,2792 2207,2792 2309,2792 2411,2792 2513,2792 2615,2792 2718,2793"/>
+                <TextEquiv>
+                    <Unicode>150 Sitzplätze und ca. 50 gute Stehplätz oder Feldsesselpläetze.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l19" custom="readingOrder {index:18;}">
+                <Coords points="1307,2933 2173,2898 2456,2933 2607,2890 2606,2835 2388,2817 2218,2862 1835,2820 1745,2862 1306,2843"/>
+                <Baseline points="1320,2895 1383,2895 1447,2894 1511,2894 1575,2894 1638,2892 1702,2892 1766,2892 1830,2892 1893,2891 1957,2891 2021,2891 2085,2891 2148,2890 2212,2889 2276,2889 2340,2889 2403,2888 2467,2888 2531,2886 2595,2886"/>
+                <TextEquiv>
+                    <Unicode>Wir sind nun natürlicherweise als Erwerbs-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l20" custom="readingOrder {index:19;}">
+                <Coords points="773,3034 2580,3034 2555,2911 2124,2965 773,2951"/>
+                <Baseline points="786,2997 875,2997 964,2996 1053,2996 1142,2996 1231,2996 1320,2994 1409,2994 1498,2993 1587,2993 1676,2993 1765,2991 1854,2991 1943,2990 2032,2990 2121,2989 2210,2988 2299,2988 2388,2988 2477,2987 2567,2987"/>
+                <TextEquiv>
+                    <Unicode>gesellschaft darauf angewiesen, mit dem Boot möglichst viel</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l21" custom="readingOrder {index:20;} organization {offset:21; length:38;}">
+                <Coords points="761,3121 2347,3119 2684,3105 2684,3058 761,3061"/>
+                <Baseline points="774,3096 873,3096 973,3096 1073,3096 1173,3095 1273,3095 1373,3095 1473,3093 1573,3093 1673,3092 1773,3091 1873,3090 1973,3089 2073,3089 2173,3089 2273,3087 2373,3087 2473,3087 2573,3087 2673,3087"/>
+                <TextEquiv>
+                    <Unicode>zu verdienen. Da die Basler Personenschiffahrtsgesellschaft in</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l22" custom="readingOrder {index:21;}">
+                <Coords points="764,3246 2694,3220 2694,3156 2466,3124 764,3154"/>
+                <Baseline points="777,3200 872,3200 967,3200 1062,3200 1157,3198 1253,3198 1348,3197 1443,3197 1538,3195 1633,3195 1729,3194 1824,3193 1919,3192 2014,3191 2109,3191 2205,3189 2300,3189 2395,3189 2490,3189 2585,3188 2681,3188"/>
+                <TextEquiv>
+                    <Unicode>der gleichen Lage ist, so wäre zu untersuchen, ob nicht im Per-</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="region_1665579746895_73l23" custom="readingOrder {index:22;}">
+                <Coords points="2468,3338 2480,3337 2487,3329 2512,3333 2574,3321 2569,3202 2552,3203 2535,3216 2525,3209 2506,3212 2496,3205 2487,3213 2463,3214"/>
+                <Baseline points="2478,3294 2505,3294 2533,3293 2561,3290"/>
+                <TextEquiv>
+                    <Unicode>./.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>Sehr geehrter Herr Christ,&#13;
+Durch Herrn Ryniker/Dr. Max Vischer&#13;
+haben Sie wahrscheinlich erfahren, dass unsere Gesellschaft&#13;
+ein Dieselmotorboot bestellt hat. Das Boot wird ähnlich ge-&#13;
+baut wie Ihr Passagierboot "Rheinfelden". Es ist allerdings&#13;
+ca. 6 m kürzer und ca. 1/2 m. schmäler. Es soll dazu dienen,&#13;
+im Hafengebiet von Basel die auf dem Hüninger Kanal eintreffen-&#13;
+den Kanalschiffe zu ihrer Löschstelle zu verschleppen. Da&#13;
+diese Arbeit allein aber nicht ermöglicht, ein Boot wirtschaft-&#13;
+lich zu betreiben, haben wir das Boot so bauen lassen, dass&#13;
+es gleichzeitig der Personenbeförderung dienen kann.&#13;
+Der Kanalverkehr, der dem Boot im Schlepp-&#13;
+geschäft Beschäfftigung bringt, beginnt in der Regel im Herbst&#13;
+und dauert bis zum Frühjahr. Er ist eine Ergänzung zum Rhein-&#13;
+verkehr. Im Sommer ist das Boot zur Hauptsache für die Personen-&#13;
+beförderung verfügbar. Die Pläne des Bootes sind von Herrn&#13;
+Schiffbau-Ingenieur Ryniker entworfen. Das Boot fasst bequem&#13;
+150 Sitzplätze und ca. 50 gute Stehplätz oder Feldsesselpläetze.&#13;
+Wir sind nun natürlicherweise als Erwerbs-&#13;
+gesellschaft darauf angewiesen, mit dem Boot möglichst viel&#13;
+zu verdienen. Da die Basler Personenschiffahrtsgesellschaft in&#13;
+der gleichen Lage ist, so wäre zu untersuchen, ob nicht im Per-&#13;
+./.</Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>
