@@ -2,7 +2,7 @@
 
 Utility class. """
 
-from transkribus_extract_textual_tags.tags import Tag
+from transkribus_extract_textual_tags.tag import Tag
 import csv
 
 

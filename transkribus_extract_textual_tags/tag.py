@@ -1,6 +1,6 @@
-""" tags.py
+""" tag.py
 
-Document, TextRegion, TextLine, and Tag classes. """
+Document, Text, and Tag dataclasses. """
 
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ class Document:
     def get_text_regions(self):
         """ Get all 'TextRegion' elements of the document. """
 
-        return [TextRegion(element=element) for element in
+        return [Region(element=element) for element in
                 self.tree.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}TextRegion")]
 
     def get_tags(self) -> List[Optional[Tag]]:
@@ -55,22 +55,9 @@ class Document:
         return tags
 
 
-# TODO: subclass TextRegion and TextLine
-'''@dataclass
-class Text:
-    """ bla """
-
-    element: etree._Element
-
-    def get_id(self) -> str:
-        """ Get 'id' attribute. """
-
-        return self.element.attrib["id"]'''
-
-
 @dataclass
-class TextRegion:
-    """ A representation of a Transkribus PAGE XML 'TextRegion' element. """
+class Text:
+    """ A representation of a Transkribus PAGE XML 'Text*' element.  """
 
     element: etree._Element
 
@@ -78,24 +65,22 @@ class TextRegion:
         """ Get 'id' attribute. """
 
         return self.element.attrib["id"]
+
+
+@dataclass
+class Region(Text):
+    """ A representation of a Transkribus PAGE XML 'TextRegion' element. """
 
     def get_text_lines(self):
         """ Get all 'TextLine' elements of the document. """
 
-        return [TextLine(element=element) for element in
+        return [Line(element=element) for element in
                 self.element.findall(".//{http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15}TextLine")]
 
 
 @dataclass
-class TextLine:
+class Line(Text):
     """ A representation of a Transkribus PAGE XML 'TextLine' element. """
-
-    element: etree._Element
-
-    def get_id(self) -> str:
-        """ Get 'id' attribute. """
-
-        return self.element.attrib["id"]
 
     def get_custom(self) -> str:
         """ Get 'custom' attribute. """

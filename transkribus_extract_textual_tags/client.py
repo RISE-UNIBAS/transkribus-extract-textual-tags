@@ -2,7 +2,7 @@
 
 Client class. """
 
-from transkribus_extract_textual_tags.tags import Document
+from transkribus_extract_textual_tags.tag import Document
 from transkribus_extract_textual_tags.utility import Utility
 import os
 
