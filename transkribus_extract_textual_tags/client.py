@@ -17,8 +17,6 @@ class Client:
         :param file_path:
         """
 
-        tags = Document(file_path=file_path).get_tags()
-
         pass
 
     @staticmethod
